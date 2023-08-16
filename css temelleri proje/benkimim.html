@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Oğuzhan Uluuğur Kişisel Web Sitesi">
+    <meta name="keywords" content="oğuzhan,uluuğur,websitesi">
+    <style>
+        /* Kutular sabit gneişlikte */
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        /* kutu genişlikleri*/
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        /* satırlar */
+        .row {
+            border: chocolate solid 2px;
+            background-color: aqua;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        /* satırların yan yana gelmesi*/
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /*tepkisel resimler */
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* col- yasla*/
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+            /*border: 1px solid red;*/
+        }
+
+        /* 768 px daha küçük ekranlar için */
+        @media screen and (max-width:500px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        /*kutu yükseklikleri */
+        #ust {
+            min-height: 50px;
+        }
+
+        #menu {
+            min-height: 50px;
+        }
+
+        #orta {
+            min-height: 400px;
+        }
+
+        #alt {
+            min-height: 50px;
+        }
+
+        /*sosyal medya iconları */
+        #icon {
+            width: 50px;
+            float: right;
+            margin-right: 10px;
+        }
+
+        /*ana menu*/
+        #menu #anamenu ul {
+            list-style: none;
+        }
+
+        #menu #anamenu ul li {
+            border: 1px solid black;
+            width: 25%;
+            float: left;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* 500px den daha küçük ekranlar için tepkisel buton */
+        @media screen and (max-width:500px) {
+            #menu #anamenu ul li {
+                width: 100%;
+            }
+        }
+
+        /* anamenu linkleri */
+        #menu #anamenu a {
+            color: cornsilk;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        #menu #anamenu a:hover {
+            color: brown;
+            text-decoration: underline;
+        }
+
+        #menu #anamenu a:active,
+        a:visited {
+            color: blueviolet;
+        }
+
+        /*alt menu */
+        #alt #altmenu p {
+            text-align: center;
+
+        }
+
+        #icerik #icerikmenu {
+            list-style: none;
+        }
+
+        #icerik #icerikmenu a {
+            color: cornsilk;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            font-size: 12px;
+
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        #icerik #icerikmenu a:hover {
+            color: brown;
+            text-decoration: underline;
+        }
+    </style>
+    <title>Oğuzhan Uluuğur Kişisel Web Sitesi</title>
+</head>
+
+<body>
+    <header id="ust" class="row">
+        <div id="foto" class="col-3">
+            <a href="index.html"><img src="oguzhan.jpeg" alt=""></a>
+
+        </div>
+        <div id="sosyal" class="col-9">
+            <div id="icon">
+                <img src="facebook-1924512_1280.png" alt="">
+            </div>
+            <div id="icon">
+                <img src="instagram-1581266_1280.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <nav id="menu" class="row">
+        <div id="anamenu" class="col-12">
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="benkimim.html">Ben Kimim </a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="iletisim.html">İletşim</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="orta" class="row">
+
+        <section id="icerik" class="col-8">
+            <div id="icerikmenu">
+                <a href="c:\Users\ASUS\OneDrive\Masaüstü\Sertifikalarım ve cv\30082022 (1).pdf" download="">CV Mİ
+                    İNDİR</a>
+            </div>
+
+        </section>
+        <aside id="yanmenu" class="col-4">
+            GİTHUB TAN BENİ TAKİP ET <a href="https://github.com/oguzhanuluugur">github</a>
+        </aside>
+    </div>
+    <footer id="alt" class="row">
+        <div id="altmenu" class="col-12">
+            <p>
+                <a href="index.html">Anasayfa</a>|
+                <a href="benkimim.html">Ben Kimim </a>|
+                <a href="galeri.html">Galeri</a>|
+                <a href="iletisim.html">İletşim</a>
+            </p>
+            <p>
+                Tüm haklar Oğuzhan Uluuğura aittir
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
